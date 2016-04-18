@@ -13,7 +13,10 @@ Url:     http://www.accelio.org/
 Source:  http://github.com/accelio/accelio/archive/v%{version}.tar.gz
 
 BuildRequires: autoconf, libtool
-BuildRequires: numactl-devel, libaio-devel, libibverbs-devel, librdmacm-devel
+BuildRequires: numactl-devel
+BuildRequires: libaio-devel
+BuildRequires: libibverbs-devel
+BuildRequires: librdmacm-devel
 %if %{with kmod}
 BuildRequires: kernel-devel
 %endif
