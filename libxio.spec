@@ -8,7 +8,7 @@ Release: 2%{?dist}
 Summary: Accelio - The Open Source I/O, Message, and RPC Acceleration Library
 
 Group:   System Environment/Libraries
-License: GPLv2 or BSD
+License: GPLv2
 Url:     http://www.accelio.org/
 Source:  accelio-%{version}.tar.xz
 
