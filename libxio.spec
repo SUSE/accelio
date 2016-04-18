@@ -13,7 +13,12 @@ Url:     http://www.accelio.org/
 Source:  http://github.com/accelio/accelio/archive/v%{version}.tar.gz
 
 BuildRequires: autoconf, libtool
+%if 0%{?fedora} || 0%{?rhel}
 BuildRequires: numactl-devel
+%endif
+%if 0%{?suse_version}
+BuildRequires: libnuma-devel
+%endif
 BuildRequires: libaio-devel
 BuildRequires: libibverbs-devel
 BuildRequires: librdmacm-devel
