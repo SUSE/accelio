@@ -78,6 +78,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 
 %files
+%defattr(-,root,root,-)
 %if 0%{without kmod}
 %{_bindir}/*
 %{_libdir}/libxio.so*
@@ -86,6 +87,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %doc AUTHORS COPYING README
 
 %files devel
+%defattr(-,root,root,-)
 %if 0%{with kmod}
 /opt/*
 %else
@@ -94,6 +96,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %if 0%{with kmod}
 %files kmod
+%defattr(-,root,root,-)
 /lib/modules/*
 %endif
 
