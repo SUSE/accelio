@@ -6,7 +6,7 @@ Name:    libxio
 Version: 1.6
 Release: 2%{?dist}
 Summary: Open Source I/O, Message, and RPC Acceleration Library
-License: GPLv2
+License: GPL-2.0
 Url:     http://www.accelio.org/
 Source:  accelio-%{version}.tar.xz
 
