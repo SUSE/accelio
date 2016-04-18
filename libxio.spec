@@ -10,7 +10,7 @@ Summary: Accelio - The Open Source I/O, Message, and RPC Acceleration Library
 Group:   System Environment/Libraries
 License: GPLv2 or BSD
 Url:     http://www.accelio.org/
-Source:  http://github.com/accelio/accelio/archive/v%{version}.tar.gz
+Source:  accelio-%{version}.tar.xz
 
 BuildRequires: autoconf, libtool
 %if 0%{?fedora} || 0%{?rhel}
