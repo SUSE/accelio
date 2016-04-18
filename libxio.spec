@@ -35,7 +35,6 @@ This package contains the shared libraries.
 
 %package devel
 Summary: Development files for the libxio library
-Group: System Environment/Libraries
 Requires: %{name} = %{version}-%{release} libibverbs-devel%{?_isa}
 
 %description devel
@@ -49,7 +48,6 @@ This package contains development files for the libxio library.
 %if 0%{with kmod}
 %package kmod
 Summary: Accelio Kernel Modules
-Group: System Environment/Libraries
 
 %description kmod
 Accelio provides an easy-to-use, reliable, scalable,
@@ -57,7 +55,7 @@ and high performance data/message delivery middleware
 that maximizes the efficiency of modern CPU and NIC hardware
 and that reduces time-to-market of new scale-out applications.
 
-This package contains the Accelio Kernel Modules
+This package contains the Accelio Kernel Modules.
 %endif
 
 
