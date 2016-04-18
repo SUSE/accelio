@@ -93,6 +93,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_libdir}/libxio.so*
 %{_libdir}/libraio.so*
 %endif
+%exclude /usr/src/debug/*
 %doc AUTHORS COPYING README
 
 %files devel
@@ -101,12 +102,14 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 /opt/*
 %else
 %{_includedir}/*
+%exclude /usr/src/debug/*
 %endif
 
 %if 0%{with kmod}
 %files kmod
 %defattr(-,root,root,-)
 /lib/modules/*
+%exclude /usr/src/debug/*
 %endif
 
 %post -p /sbin/ldconfig
