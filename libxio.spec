@@ -35,6 +35,7 @@ This package contains the shared libraries.
 
 %package devel
 Summary: Development files for the libxio library
+Group: Development/Libraries/C and C++
 Requires: %{name} = %{version}-%{release} libibverbs-devel%{?_isa}
 
 %description devel
