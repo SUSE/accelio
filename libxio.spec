@@ -6,6 +6,7 @@ Name:    libxio
 Version: 1.6
 Release: 2%{?dist}
 Summary: Open Source I/O, Message, and RPC Acceleration Library
+Group:   Productivity/Networking/System
 License: GPL-2.0
 Url:     http://www.accelio.org/
 Source:  accelio-%{version}.tar.xz
@@ -25,7 +26,7 @@ BuildRequires: kernel-devel
 %endif
 
 %description
-Accelio provides an easy-to-use, reliable, scalable,
+Accelio (libxio) provides an easy-to-use, reliable, scalable,
 and high performance data/message delivery middleware
 that maximizes the efficiency of modern CPU and NIC hardware
 and that reduces time-to-market of new scale-out applications.
@@ -41,7 +42,7 @@ Requires: libibverbs-devel%{?_isa}
 Requires: librdmacm-devel%{?_isa}
 
 %description devel
-Accelio provides an easy-to-use, reliable, scalable,
+Accelio (libxio) provides an easy-to-use, reliable, scalable,
 and high performance data/message delivery middleware
 that maximizes the efficiency of modern CPU and NIC hardware
 and that reduces time-to-market of new scale-out applications.
@@ -53,7 +54,7 @@ This package contains development files for the libxio library.
 Summary: Accelio Kernel Modules
 
 %description kmod
-Accelio provides an easy-to-use, reliable, scalable,
+Accelio (libxio) provides an easy-to-use, reliable, scalable,
 and high performance data/message delivery middleware
 that maximizes the efficiency of modern CPU and NIC hardware
 and that reduces time-to-market of new scale-out applications.
