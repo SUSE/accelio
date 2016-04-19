@@ -36,7 +36,9 @@ This package contains the shared libraries.
 %package devel
 Summary: Development files for the libxio library
 Group: Development/Libraries/C and C++
-Requires: %{name} = %{version}-%{release} libibverbs-devel%{?_isa}
+Requires: %{name} = %{version}-%{release} 
+Requires: libibverbs-devel%{?_isa}
+Requires: librdmacm-devel%{?_isa}
 
 %description devel
 Accelio provides an easy-to-use, reliable, scalable,
