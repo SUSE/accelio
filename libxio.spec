@@ -27,6 +27,7 @@ Group:   Productivity/Networking/System
 License: GPL-2.0
 Url:     http://www.accelio.org/
 Source:  accelio-%{version}.tar.xz
+ExclusiveArch: x86_64 aarch64
 
 BuildRequires: autoconf, libtool
 %if 0%{?fedora} || 0%{?rhel}
