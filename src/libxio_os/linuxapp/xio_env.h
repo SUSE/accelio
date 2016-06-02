@@ -76,7 +76,9 @@
 #include <linux/tcp.h>
 #include <linux/mman.h>
 #include <get_clock.h>
+#ifndef __aarch64__
 #include <emmintrin.h>
+#endif
 
 #ifdef __cplusplus
 extern "C" {
@@ -230,7 +232,9 @@ static inline int arch_cache_line_size(void)
 /*---------------------------------------------------------------------------*/
 static inline void xio_pause(void)
 {
+#ifndef __aarch64__
 	_mm_pause();
+#endif
 }
 
 /*---------------------------------------------------------------------------*/

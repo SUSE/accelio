@@ -73,6 +73,15 @@ static inline cycles_t get_cycles(void)
 	asm volatile ("mov %0=ar.itc" : "=r" (ret));
 	return ret;
 }
+#elif defined(__aarch64__)
+typedef unsigned long cycles_t;
+static inline cycles_t get_cycles(void)
+{
+	cycles_t ret = 0;
+
+	asm volatile ("mrs %0, cntvct_el0" : "=r" (ret));
+	return ret;
+}
 #elif defined(WIN32)
 #include <Windows.h>
 

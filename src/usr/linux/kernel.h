@@ -89,7 +89,9 @@ static inline void mutex_unlock(struct mutex *mtx)
 
 typedef volatile int spinlock_t;
 
+#ifndef __aarch64__
 #define SPINLOCK_NG
+#endif
 
 #ifndef SPINLOCK_NG
 
