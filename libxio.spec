@@ -16,7 +16,7 @@
 #
 
 %bcond_with devel_mode
-%bcond_without kmod
+%bcond_with kmod
 %define debug_package %{nil}
 
 Name:    libxio
